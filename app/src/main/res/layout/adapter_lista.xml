@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/purple_500"
+    android:orientation="vertical"
+    android:padding="10sp"
+    app:barrierMargin="10sp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textDtInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="29"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textDtFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_weight="1"
+            android:text="03"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/textMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:text="Dezembro"
+            android:textAlignment="viewStart" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textTituloEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="12
+"
+        android:text="Titulo"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="14"
+            android:text="Belo Horizonte "
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MG"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
