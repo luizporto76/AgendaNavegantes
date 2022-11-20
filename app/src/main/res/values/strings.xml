@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Agenda Navegantes</string>
+    <string name="btn_actity_inicial_agenda">AGENDA DE EVENTOS</string>
+    <string name="btn_actity_inicial_cadastrar">CADASTRAR EVENTO</string>
+</resources>
