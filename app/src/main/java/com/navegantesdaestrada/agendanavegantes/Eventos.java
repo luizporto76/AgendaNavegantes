@@ -11,6 +11,8 @@ public class Eventos {
     private String estado;
 
     public Eventos(String titulo, String dataInicial, String dataFinal, String mes, String cidade, String estado) {
+
+
         this.titulo = titulo;
         this.dataInicial = dataInicial;
         this.dataFinal = dataFinal;
@@ -66,4 +68,5 @@ public class Eventos {
     public void setEstado(String estado) {
         this.estado = estado;
     }
+
 }

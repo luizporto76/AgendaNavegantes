@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "83827693845",
+    "project_id": "navegantes-agenda",
+    "storage_bucket": "navegantes-agenda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83827693845:android:6c09b3eaf93f51d415b11c",
+        "android_client_info": {
+          "package_name": "com.navegantesdaestrada.agendanavegantes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83827693845-ubqs4k0hk6s0qtlcjso0a26j8tj6cd6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.navegantesdaestrada.agendanavegantes",
+            "certificate_hash": "0d3b1004b56daa44ea73e24f629473ffdd4fb4d3"
+          }
+        },
+        {
+          "client_id": "83827693845-av77srq9ap02i653okh20cj47d4eqvuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw5WnnJ7O7Lc-XNvHmL-mTmZ_DCdhzObM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83827693845-av77srq9ap02i653okh20cj47d4eqvuf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
