@@ -8,7 +8,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
+    private List<Eventos> listaeventos;
+    public adapter(List<Eventos> listaeventos ){
+        this.listaeventos = listaeventos;
+    }
 
     @NonNull
     @Override
@@ -19,18 +25,20 @@ public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.titulo.setText("1° ENCONTRO SAO JOSE DA LAPA");
-        holder.dataInicial.setText("20");
-        holder.dataFinal.setText("03");
-        holder.mes.setText("DEZEMBRO");
-        holder.cidade.setText("Belo Horizonte");
-        holder.estado.setText("MG");
+        Eventos eventos = listaeventos.get(position);
+
+        holder.titulo.setText(eventos.getTitulo());
+        holder.dataInicial.setText(eventos.getDataInicial());
+        holder.dataFinal.setText(eventos.getDataFinal());
+        holder.mes.setText(eventos.getMes());
+        holder.cidade.setText(eventos.getCidade());
+        holder.estado.setText(eventos.getEstado());
 
     }
 
     @Override
     public int getItemCount() {
-        return 5;
+        return listaeventos.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
