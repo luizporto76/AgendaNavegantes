@@ -10,15 +10,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     
-    private Button btnAgenda;
+    private Button btnAgenda, btnCadastrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnAgenda = findViewById(R.id.buttonAgenda);
         //Chama tela de lista de eventos
+        btnAgenda = findViewById(R.id.buttonAgenda);
         btnAgenda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,5 +28,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //Chama tela de cadastro de usuário
+        btnCadastrar = findViewById(R.id.buttonCadastrar);
+        btnCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), cadastro_usuario.class);
+                startActivity(intent);
+            }
+        });
     }
 }

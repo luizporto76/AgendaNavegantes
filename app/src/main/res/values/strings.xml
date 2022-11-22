@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Agenda Navegantes</string>
-    <string name="btn_activity_inicial_agenda">AGENDA DE EVENTOS</string>
-    <string name="btn_activity_inicial_cadastrar">CADASTRAR EVENTO</string>
+    <string name="btn_activity_inicial_agenda">VER AGENDA DE EVENTOS</string>
+    <string name="btn_activity_inicial_cadastrar">FAZER SEU CADASTRO</string>
     <string name="btn_activity_lista_filtro">FILTRAR POR ESTADO</string>
+    <string name="btn_activity_inical_publicar">PUBLICAR EVENTO</string>
 </resources>
