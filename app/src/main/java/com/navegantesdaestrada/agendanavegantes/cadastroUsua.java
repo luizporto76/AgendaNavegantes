@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class cadastroUsua extends AppCompatActivity {
     private FirebaseAuth usuario = FirebaseAuth.getInstance();
     private Button button;
+  //  private String emaildecadastro, senhaDeCadasgtro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class cadastroUsua extends AppCompatActivity {
     }
     //Cadastrar usuário
     public void cadastrar (View view){
-        usuario.createUserWithEmailAndPassword("theooo@gmail.com", "123abc")
+        usuario.createUserWithEmailAndPassword("ssenha@email.com.br", "senhaDeCadasgtro")
                 .addOnCompleteListener(cadastroUsua.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
