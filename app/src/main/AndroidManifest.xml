@@ -13,7 +13,14 @@
         android:theme="@style/Theme.AgendaNavegantes"
         tools:targetApi="31">
         <activity
-            android:name=".cadastroUsua"
+            android:name=".CadastroEventos"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CadastroUsua"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

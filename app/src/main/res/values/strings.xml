@@ -3,6 +3,7 @@
     <string name="btn_activity_inicial_agenda">VER AGENDA DE EVENTOS</string>
     <string name="btn_activity_inicial_cadastrar">FAZER SEU CADASTRO</string>
     <string name="btn_cadatraUsua_cadastrar">Cadastrar</string>
+    <string name="btn_cadatraUsua_voltar">Voltar</string>
     <string name="btn_activity_lista_filtro">FILTRAR POR ESTADO</string>
     <string name="btn_activity_inical_publicar">PUBLICAR EVENTO</string>
     <string name="textEmaial_activity_CadastroUsua"> Informe seu e-mail </string>
