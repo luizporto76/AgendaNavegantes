@@ -27,7 +27,7 @@ public class CadastroUsua extends AppCompatActivity {
     private EditText edit_email;
     private EditText edit_senha;
     private Button bt_cadastrar, bt_voltar, bt_login, bt_logof;
-    String[] mensagem = {"Preencha todos os campos", "Cadastro realizado com sucesso "};
+    String[] mensagem = {"Preecha todos os campos", "Cadastro realizado com sucesso "};
     private FirebaseAuth usuario = FirebaseAuth.getInstance();
 
 
@@ -57,6 +57,67 @@ public class CadastroUsua extends AppCompatActivity {
                 if(email.isEmpty() || senha.isEmpty()){
                     AlertDialog.Builder dialog = new AlertDialog.Builder(CadastroUsua.this);
                     dialog.setTitle("ERRO AO FAZER O LOGIN");
+                    dialog.setMessage("Preencha todos os campos");
+                    dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    });
+                    dialog.create();
+                    dialog.show();
+                }else{
+                usuario.signInWithEmailAndPassword(email, senha)
+                        .addOnCompleteListener(CadastroUsua.this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if(task.isSuccessful()){
+                                    Toast.makeText(getApplicationContext(),"Login realizado com sucesso", Toast.LENGTH_LONG).show();
+                                    edit_email.setText("");
+                                    edit_senha.setText("");
+                                    Intent intent = new Intent(getApplicationContext(), CadastroEventos.class);
+                                    startActivity(intent);
+                                }else{
+                                    AlertDialog.Builder dialog = new AlertDialog.Builder(CadastroUsua.this);
+                                    dialog.setTitle("ERRO AO FAZER O LOGIN");
+                                    dialog.setMessage("Confira o e-mail e senha digitado ou caso seja seu primeiro acesso faça seu cadastro");
+                                    dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                                        }
+                                    });
+                                    dialog.create();
+                                    dialog.show();
+
+                                    edit_email.setText("");
+                                    edit_senha.setText("");
+                                }
+                            }
+                        });
+            } //
+        }});
+
+        bt_logof.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                usuario.signOut();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_login.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+
+            public void onClick(View view) {
+                String email = edit_email.getText().toString();
+                String senha = edit_senha.getText().toString();
+
+                if(email.isEmpty() || senha.isEmpty()){
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(CadastroUsua.this);
+                    dialog.setTitle("ERRO AO FAZER O LOGINn");
                     dialog.setMessage("Preencha todos os campos");
                     dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
