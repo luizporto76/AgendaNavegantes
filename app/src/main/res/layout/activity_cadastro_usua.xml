@@ -11,36 +11,41 @@
         android:id="@+id/bt_cadastrar"
         android:layout_width="411dp"
         android:layout_height="48dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="24dp"
         android:onClick="cadastrar"
         android:padding="10dp"
         android:text="@string/btn_cadatraUsua_cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_login" />
 
     <Button
         android:id="@+id/bt_voltar"
         android:layout_width="411dp"
         android:layout_height="48dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="24dp"
         android:padding="10dp"
         android:text="@string/btn_cadatraUsua_voltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_cadastrar" />
 
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+        android:text="@string/btn_cadatraUsua_logim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:hint="@string/textEmaial_activity_CadastroUsua"
         android:inputType="textEmailAddress"
@@ -53,9 +58,7 @@
         android:id="@+id/editTextPassword"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:hint="@string/textSenha_activity_CadastroUsua"
         android:inputType="textPassword"
@@ -70,9 +73,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo300dpjpg" />
+
+    <Button
+        android:id="@+id/bt_logof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="logof"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_voltar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

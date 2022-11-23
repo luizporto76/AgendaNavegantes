@@ -1,7 +1,9 @@
 package com.navegantesdaestrada.agendanavegantes;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Chama tela de cadastro de eventos
+        //Chama tela de publicar eventos
         btnPublica = findViewById(R.id.buttonPublicar);
         btnPublica.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,10 +54,17 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), CadastroEventos.class);
                     startActivity(intent);
                 }else{
-                    Snackbar snackbar = Snackbar.make(view, "usuario nao logado", Snackbar.LENGTH_LONG );
-                    snackbar.setBackgroundTint(Color.WHITE);
-                    snackbar.setTextColor(Color.BLACK);
-                    snackbar.show();
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+                    dialog.setTitle("AVISO ");
+                    dialog.setMessage("Para publicar um evento, faça o login ou caso seja seu primeiro acesso faça seu cadastro");
+                    dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    });
+                    dialog.create();
+                    dialog.show();
                 }
             }
         });
