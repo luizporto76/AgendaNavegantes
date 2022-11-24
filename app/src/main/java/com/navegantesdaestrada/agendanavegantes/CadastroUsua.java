@@ -117,7 +117,7 @@ public class CadastroUsua extends AppCompatActivity {
 
                 if(email.isEmpty() || senha.isEmpty()){
                     AlertDialog.Builder dialog = new AlertDialog.Builder(CadastroUsua.this);
-                    dialog.setTitle("ERRO AO FAZER O LOGINn");
+                    dialog.setTitle("ERRO AO FAZER O LOGIN");
                     dialog.setMessage("Preencha todos os campos");
                     dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override

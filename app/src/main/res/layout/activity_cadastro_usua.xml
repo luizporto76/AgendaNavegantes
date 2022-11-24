@@ -8,7 +8,7 @@
     tools:context=".CadastroUsua">
 
     <Button
-        android:id="@+id/bt_cadastrar"
+        android:id="@+id/bt_cadastrar_evento"
         android:layout_width="411dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -28,7 +28,7 @@
         android:text="@string/btn_cadatraUsua_voltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_cadastrar" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_cadastrar_evento" />
 
     <Button
         android:id="@+id/bt_login"
