@@ -9,4 +9,19 @@
     <string name="btn_activity_inical_publicar">PUBLICAR EVENTO</string>
     <string name="textEmaial_activity_CadastroUsua"> Informe seu e-mail </string>
     <string name="textSenha_activity_CadastroUsua"> Escolha uma senha  </string>
+    <string name="textTitulo_activity_CadastroEvento">Titulo do Evento</string>
+    <string name="textDataInicial_activity_CadastroEvento">Data inicial</string>
+    <string name="textDataFinal_activity_CadastroEvento">Data Final</string>
+    <string name="textEndereco_activity_CadastroEvento">Endereço</string>
+    <string name="textDescricao_activity_CadastroEvento">Descrição</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
 </resources>
